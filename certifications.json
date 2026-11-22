@@ -1,0 +1,395 @@
+{
+  "certifications": [
+    {
+      "id": "isc2-cc",
+      "name": "Certified in Cybersecurity (CC)",
+      "provider": "ISC2",
+      "domains": [
+        "defense",
+        "grc"
+      ],
+      "url": "https://www.isc2.org/certifications/cc",
+      "summary": "Foundational cybersecurity concepts for people entering the field.",
+      "level": "Beginner",
+      "checked": "2026-11-22",
+      "roadmap_categories": [
+        "grc"
+      ],
+      "roadmap_subcategories": {}
+    },
+    {
+      "id": "cissp",
+      "name": "Certified Information Systems Security Professional (CISSP)",
+      "provider": "ISC2",
+      "domains": [
+        "engineering",
+        "grc"
+      ],
+      "url": "https://www.isc2.org/certifications/cissp",
+      "summary": "Broad security leadership, architecture, and management.",
+      "level": null,
+      "checked": "2026-11-22",
+      "roadmap_categories": [
+        "grc",
+        "architecture"
+      ],
+      "roadmap_subcategories": {}
+    },
+    {
+      "id": "ccsp",
+      "name": "Certified Cloud Security Professional (CCSP)",
+      "provider": "ISC2",
+      "domains": [
+        "engineering",
+        "systems"
+      ],
+      "url": "https://www.isc2.org/certifications/ccsp",
+      "summary": "Cloud security architecture, design, operations, and controls.",
+      "level": null,
+      "checked": "2026-11-22",
+      "roadmap_categories": [
+        "architecture"
+      ],
+      "roadmap_subcategories": {
+        "architecture": "cloud"
+      }
+    },
+    {
+      "id": "sscp",
+      "name": "Systems Security Certified Practitioner (SSCP)",
+      "provider": "ISC2",
+      "domains": [
+        "engineering",
+        "defense",
+        "systems"
+      ],
+      "url": "https://www.isc2.org/certifications/sscp",
+      "summary": "Security administration and operations across systems.",
+      "level": null,
+      "checked": "2026-11-22",
+      "roadmap_categories": [
+        "network",
+        "defense"
+      ],
+      "roadmap_subcategories": {}
+    },
+    {
+      "id": "cgrc",
+      "name": "Certified in Governance, Risk and Compliance (CGRC)",
+      "provider": "ISC2",
+      "domains": [
+        "grc"
+      ],
+      "url": "https://www.isc2.org/certifications/cgrc",
+      "summary": "Governance, risk management, and compliance.",
+      "level": null,
+      "checked": "2026-11-22",
+      "roadmap_categories": [
+        "grc"
+      ],
+      "roadmap_subcategories": {
+        "grc": "governance"
+      }
+    },
+    {
+      "id": "csslp",
+      "name": "Certified Secure Software Lifecycle Professional (CSSLP)",
+      "provider": "ISC2",
+      "domains": [
+        "engineering"
+      ],
+      "url": "https://www.isc2.org/certifications/csslp",
+      "summary": "Security practices across the software development lifecycle.",
+      "level": null,
+      "checked": "2026-11-22",
+      "roadmap_categories": [
+        "architecture"
+      ],
+      "roadmap_subcategories": {}
+    },
+    {
+      "id": "sc900",
+      "name": "Security, Compliance, and Identity Fundamentals (SC-900)",
+      "provider": "Microsoft",
+      "domains": [
+        "engineering",
+        "grc"
+      ],
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/security-compliance-and-identity-fundamentals/",
+      "summary": "Foundations of security, compliance, and identity in Microsoft services.",
+      "level": "Beginner",
+      "checked": "2026-11-22",
+      "roadmap_categories": [
+        "iam",
+        "grc"
+      ],
+      "roadmap_subcategories": {}
+    },
+    {
+      "id": "sc200",
+      "name": "Security Operations Analyst Associate (SC-200)",
+      "provider": "Microsoft",
+      "domains": [
+        "defense"
+      ],
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/security-operations-analyst/",
+      "summary": "Security monitoring, incident response, and threat hunting with Microsoft tools.",
+      "level": "Intermediate",
+      "checked": "2026-11-22",
+      "roadmap_categories": [
+        "defense"
+      ],
+      "roadmap_subcategories": {
+        "defense": "incident"
+      }
+    },
+    {
+      "id": "htb-cpts",
+      "name": "Certified Penetration Testing Specialist (CPTS)",
+      "provider": "Hack The Box",
+      "domains": [
+        "offensive"
+      ],
+      "url": "https://academy.hackthebox.com/preview/certifications/htb-certified-penetration-testing-specialist",
+      "summary": "Hands-on penetration testing and reporting.",
+      "level": "Intermediate",
+      "checked": "2026-11-22",
+      "roadmap_categories": [
+        "offense"
+      ],
+      "roadmap_subcategories": {
+        "offense": "pentesting"
+      }
+    },
+    {
+      "id": "htb-cdsa",
+      "name": "Certified Defensive Security Analyst (CDSA)",
+      "provider": "Hack The Box",
+      "domains": [
+        "defense"
+      ],
+      "url": "https://academy.hackthebox.com/preview/certifications/htb-certified-defensive-security-analyst/",
+      "summary": "Hands-on security analysis, SOC operations, and incident handling.",
+      "level": "Intermediate",
+      "checked": "2026-11-22",
+      "roadmap_categories": [
+        "defense"
+      ],
+      "roadmap_subcategories": {
+        "defense": "incident"
+      }
+    },
+    {
+      "id": "oscp",
+      "name": "OffSec Certified Professional (OSCP / OSCP+)",
+      "provider": "OffSec",
+      "domains": [
+        "offensive"
+      ],
+      "url": "https://help.offsec.com/hc/en-us/articles/360040165632-OSCP-Exam-Guide",
+      "summary": "Practical ethical hacking and penetration testing.",
+      "level": null,
+      "checked": "2026-11-22",
+      "roadmap_categories": [
+        "offense"
+      ],
+      "roadmap_subcategories": {
+        "offense": "pentesting"
+      }
+    },
+    {
+      "id": "cisa",
+      "name": "Certified Information Systems Auditor (CISA)",
+      "provider": "ISACA",
+      "domains": [
+        "grc"
+      ],
+      "url": "https://www.isaca.org/credentialing/certifications",
+      "summary": "Information systems audit, control, and assurance.",
+      "level": null,
+      "checked": "2026-11-22",
+      "roadmap_categories": [
+        "assessment"
+      ],
+      "roadmap_subcategories": {}
+    },
+    {
+      "id": "cism",
+      "name": "Certified Information Security Manager (CISM)",
+      "provider": "ISACA",
+      "domains": [
+        "grc"
+      ],
+      "url": "https://www.isaca.org/credentialing/certifications",
+      "summary": "Information security management and governance.",
+      "level": null,
+      "checked": "2026-11-22",
+      "roadmap_categories": [
+        "grc"
+      ],
+      "roadmap_subcategories": {
+        "grc": "governance"
+      }
+    },
+    {
+      "id": "crisc",
+      "name": "Certified in Risk and Information Systems Control (CRISC)",
+      "provider": "ISACA",
+      "domains": [
+        "grc"
+      ],
+      "url": "https://www.isaca.org/credentialing/crisc/get-crisc-certified",
+      "summary": "Information systems risk and controls.",
+      "level": null,
+      "checked": "2026-11-22",
+      "roadmap_categories": [
+        "grc"
+      ],
+      "roadmap_subcategories": {
+        "grc": "governance"
+      }
+    }
+  ],
+  "roadmap_categories": [
+    {
+      "id": "network",
+      "name": "Network Security",
+      "color": "#B0BDC9",
+      "full_name": "Communication and Network Security",
+      "subcategories": [
+        {
+          "id": "general",
+          "name": ""
+        }
+      ]
+    },
+    {
+      "id": "iam",
+      "name": "IAM",
+      "color": "#6DAFE5",
+      "full_name": "Identity and Access Management",
+      "subcategories": [
+        {
+          "id": "general",
+          "name": ""
+        }
+      ]
+    },
+    {
+      "id": "architecture",
+      "name": "Security Architecture",
+      "color": "#DCB866",
+      "full_name": "Security Architecture and Engineering",
+      "subcategories": [
+        {
+          "id": "general",
+          "name": ""
+        },
+        {
+          "id": "cloud",
+          "name": "Cloud / SysOps"
+        },
+        {
+          "id": "unix",
+          "name": "*nix"
+        },
+        {
+          "id": "ics",
+          "name": "ICS / IoT"
+        }
+      ]
+    },
+    {
+      "id": "data",
+      "name": "Data Protection",
+      "color": "#B7A2E8",
+      "full_name": "Data Protection",
+      "subcategories": [
+        {
+          "id": "general",
+          "name": ""
+        }
+      ]
+    },
+    {
+      "id": "grc",
+      "name": "Security Management",
+      "color": "#68C8B4",
+      "full_name": "Security Management / GRC",
+      "subcategories": [
+        {
+          "id": "general",
+          "name": ""
+        },
+        {
+          "id": "governance",
+          "name": "GRC"
+        }
+      ]
+    },
+    {
+      "id": "assessment",
+      "name": "Assessment & Testing",
+      "color": "#DB9C93",
+      "full_name": "Security Assessment and Testing",
+      "subcategories": [
+        {
+          "id": "general",
+          "name": ""
+        }
+      ]
+    },
+    {
+      "id": "ai",
+      "name": "AI Security",
+      "color": "#D29C6C",
+      "full_name": "AI Security",
+      "subcategories": [
+        {
+          "id": "general",
+          "name": ""
+        }
+      ]
+    },
+    {
+      "id": "defense",
+      "name": "Defense",
+      "color": "#6DAFE5",
+      "full_name": "Defensive Security Operations",
+      "subcategories": [
+        {
+          "id": "general",
+          "name": ""
+        },
+        {
+          "id": "forensics",
+          "name": "Forensics"
+        },
+        {
+          "id": "incident",
+          "name": "Incident Handling"
+        }
+      ]
+    },
+    {
+      "id": "offense",
+      "name": "Offense",
+      "color": "#E36B72",
+      "full_name": "Offensive Security Operations",
+      "subcategories": [
+        {
+          "id": "general",
+          "name": ""
+        },
+        {
+          "id": "pentesting",
+          "name": "Penetration Testing"
+        },
+        {
+          "id": "exploitation",
+          "name": "Exploitation"
+        }
+      ]
+    }
+  ]
+}

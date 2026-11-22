@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explore cybersecurity domains and specialties.">
+  <title>Cybersecurity Realms</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
+  <script defer src="script.js"></script>
+</head>
+<body>
+<main class="page">
+  <nav class="site-nav" aria-label="Main navigation"><a href="index.html" aria-current="page">Domains</a><a href="certifications.html">Certifications</a></nav>
+  <header class="header">
+    <h1>Cybersecurity Realms</h1>
+    <div class="view-switch" role="group" aria-label="Choose view">
+      <button type="button" data-view="list" aria-pressed="true">List</button>
+      <button type="button" data-view="map" aria-pressed="false">Map</button>
+    </div>
+  </header>
+  <p class="hint">Select a domain or specialty to explore.</p>
+  <div id="status" role="status" class="status">Loading...</div>
+  <section class="workspace" aria-label="Cybersecurity domains">
+    <div id="list-view" class="list-view" hidden></div>
+    <div id="map-view" class="map-view" hidden>
+      <p class="map-instruction">Select a domain or specialty for details.</p>
+      <div class="map-scroll"><svg id="graph" role="group" aria-label="Cybersecurity domain map"></svg></div>
+    </div>
+  </section>
+</main>
+<div id="backdrop" class="backdrop" hidden></div>
+<aside id="details" class="drawer" role="dialog" aria-modal="true" aria-labelledby="detail-title" hidden>
+  <div class="drawer-top"><span>Details</span><button type="button" id="close-details" aria-label="Close details">&times;</button></div>
+  <div id="detail-content"></div>
+</aside>
+</body>
+</html>

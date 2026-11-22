@@ -1,0 +1,376 @@
+{
+  "domains": [
+    {
+      "id": "offensive",
+      "name": "Offensive Security",
+      "color": "#E36B72",
+      "icon": "target",
+      "description": "Identifying and validating security weaknesses through authorized testing and adversary simulation.",
+      "related_certs": [
+        "htb-cpts",
+        "oscp"
+      ],
+      "specialties": [
+        {
+          "id": "penetration-testing",
+          "name": "Penetration Testing",
+          "children": [
+            {
+              "id": "web-api-testing",
+              "name": "Web & API Testing",
+              "children": [],
+              "related_certs": []
+            },
+            {
+              "id": "network-cloud-testing",
+              "name": "Network & Cloud Testing",
+              "children": [],
+              "related_certs": []
+            }
+          ],
+          "related_certs": []
+        },
+        {
+          "id": "red-team-operations",
+          "name": "Red Team Operations",
+          "children": [],
+          "related_certs": []
+        },
+        {
+          "id": "vulnerability-research",
+          "name": "Vulnerability Research",
+          "children": [],
+          "related_certs": []
+        },
+        {
+          "id": "exploit-development",
+          "name": "Exploit Development",
+          "children": [],
+          "related_certs": []
+        },
+        {
+          "id": "social-engineering",
+          "name": "Social Engineering",
+          "children": [],
+          "related_certs": []
+        }
+      ]
+    },
+    {
+      "id": "defense",
+      "name": "Defense & Response",
+      "color": "#6DAFE5",
+      "icon": "shield",
+      "description": "Monitoring for threats, investigating suspicious activity, and responding to security incidents.",
+      "related_certs": [
+        "isc2-cc",
+        "sscp",
+        "sc200",
+        "htb-cdsa"
+      ],
+      "specialties": [
+        {
+          "id": "security-operations-soc",
+          "name": "Security Operations (SOC)",
+          "children": [],
+          "related_certs": []
+        },
+        {
+          "id": "detection-engineering",
+          "name": "Detection Engineering",
+          "children": [],
+          "related_certs": []
+        },
+        {
+          "id": "threat-hunting",
+          "name": "Threat Hunting",
+          "children": [],
+          "related_certs": []
+        },
+        {
+          "id": "threat-intelligence",
+          "name": "Threat Intelligence",
+          "children": [],
+          "related_certs": []
+        },
+        {
+          "id": "incident-response",
+          "name": "Incident Response",
+          "children": [],
+          "related_certs": []
+        },
+        {
+          "id": "digital-forensics",
+          "name": "Digital Forensics",
+          "children": [],
+          "related_certs": []
+        },
+        {
+          "id": "malware-analysis",
+          "name": "Malware Analysis",
+          "children": [],
+          "related_certs": []
+        },
+        {
+          "id": "email-security",
+          "name": "Email Security",
+          "children": [],
+          "related_certs": []
+        }
+      ]
+    },
+    {
+      "id": "engineering",
+      "name": "Security Engineering",
+      "color": "#B7A2E8",
+      "icon": "gear",
+      "description": "Designing, building, and maintaining secure systems, applications, and protective controls.",
+      "related_certs": [
+        "cissp",
+        "ccsp",
+        "sscp",
+        "csslp",
+        "sc900"
+      ],
+      "specialties": [
+        {
+          "id": "security-architecture",
+          "name": "Security Architecture",
+          "children": [],
+          "related_certs": []
+        },
+        {
+          "id": "network-security",
+          "name": "Network Security",
+          "children": [],
+          "related_certs": []
+        },
+        {
+          "id": "cloud-security",
+          "name": "Cloud Security",
+          "children": [],
+          "related_certs": []
+        },
+        {
+          "id": "application-api-security",
+          "name": "Application & API Security",
+          "children": [],
+          "related_certs": []
+        },
+        {
+          "id": "product-security",
+          "name": "Product Security",
+          "children": [],
+          "related_certs": []
+        },
+        {
+          "id": "devsecops",
+          "name": "DevSecOps",
+          "children": [],
+          "related_certs": []
+        },
+        {
+          "id": "vulnerability-management",
+          "name": "Vulnerability Management",
+          "children": [
+            {
+              "id": "vulnerability-assessment",
+              "name": "Vulnerability Assessment",
+              "children": [],
+              "related_certs": []
+            }
+          ],
+          "related_certs": []
+        },
+        {
+          "id": "ai-ml-security",
+          "name": "AI/ML Security",
+          "children": [],
+          "related_certs": []
+        },
+        {
+          "id": "software-supply-chain-security",
+          "name": "Software Supply Chain Security",
+          "children": [],
+          "related_certs": []
+        },
+        {
+          "id": "identity-data-security",
+          "name": "Identity & Data Security",
+          "children": [
+            {
+              "id": "identity-access-management",
+              "name": "Identity & Access Management",
+              "children": [],
+              "related_certs": []
+            },
+            {
+              "id": "privileged-access-management",
+              "name": "Privileged Access Management",
+              "children": [],
+              "related_certs": []
+            },
+            {
+              "id": "authentication-authorization",
+              "name": "Authentication & Authorization",
+              "children": [],
+              "related_certs": []
+            },
+            {
+              "id": "data-security",
+              "name": "Data Security",
+              "children": [],
+              "related_certs": []
+            },
+            {
+              "id": "privacy-engineering",
+              "name": "Privacy Engineering",
+              "children": [],
+              "related_certs": []
+            },
+            {
+              "id": "cryptography-key-management",
+              "name": "Cryptography & Key Management",
+              "children": [],
+              "related_certs": []
+            },
+            {
+              "id": "data-loss-prevention",
+              "name": "Data Loss Prevention",
+              "children": [],
+              "related_certs": []
+            }
+          ],
+          "related_certs": []
+        }
+      ]
+    },
+    {
+      "id": "grc",
+      "name": "Governance, Risk & Compliance",
+      "color": "#68C8B4",
+      "icon": "scale",
+      "description": "Aligning security with organizational objectives, managing risk, and meeting relevant obligations.",
+      "related_certs": [
+        "isc2-cc",
+        "cissp",
+        "cgrc",
+        "sc900",
+        "cisa",
+        "cism",
+        "crisc"
+      ],
+      "specialties": [
+        {
+          "id": "security-governance",
+          "name": "Security Governance",
+          "children": [],
+          "related_certs": []
+        },
+        {
+          "id": "cyber-risk-management",
+          "name": "Cyber Risk Management",
+          "children": [],
+          "related_certs": []
+        },
+        {
+          "id": "security-compliance",
+          "name": "Security Compliance",
+          "children": [],
+          "related_certs": []
+        },
+        {
+          "id": "security-audit-assurance",
+          "name": "Security Audit & Assurance",
+          "children": [],
+          "related_certs": []
+        },
+        {
+          "id": "third-party-risk",
+          "name": "Third-Party Risk",
+          "children": [],
+          "related_certs": []
+        },
+        {
+          "id": "security-policy-controls",
+          "name": "Security Policy & Controls",
+          "children": [],
+          "related_certs": []
+        },
+        {
+          "id": "business-continuity",
+          "name": "Business Continuity",
+          "children": [],
+          "related_certs": []
+        }
+      ]
+    },
+    {
+      "id": "systems",
+      "name": "Systems & Infrastructure",
+      "color": "#DCB866",
+      "icon": "server",
+      "description": "Protecting the devices, operational technology, and infrastructure that systems rely on.",
+      "related_certs": [
+        "ccsp",
+        "sscp"
+      ],
+      "specialties": [
+        {
+          "id": "endpoint-security",
+          "name": "Endpoint Security",
+          "children": [],
+          "related_certs": []
+        },
+        {
+          "id": "mobile-security",
+          "name": "Mobile Security",
+          "children": [],
+          "related_certs": []
+        },
+        {
+          "id": "ot-ics-security",
+          "name": "OT / ICS Security",
+          "children": [],
+          "related_certs": []
+        },
+        {
+          "id": "iot-embedded-security",
+          "name": "IoT & Embedded Security",
+          "children": [],
+          "related_certs": []
+        },
+        {
+          "id": "hardware-firmware-security",
+          "name": "Hardware & Firmware Security",
+          "children": [],
+          "related_certs": []
+        },
+        {
+          "id": "infrastructure-security",
+          "name": "Infrastructure Security",
+          "children": [],
+          "related_certs": []
+        },
+        {
+          "id": "disaster-recovery",
+          "name": "Disaster Recovery",
+          "children": [],
+          "related_certs": []
+        }
+      ]
+    }
+  ],
+  "bridges": [
+    {
+      "id": "purple-teaming",
+      "name": "Purple Teaming",
+      "description": "A collaborative practice connecting offensive and defensive teams to improve detection and response.",
+      "connects": [
+        "offensive",
+        "defense"
+      ],
+      "related_certs": []
+    }
+  ]
+}
