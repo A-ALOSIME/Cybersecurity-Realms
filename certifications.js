@@ -7,16 +7,17 @@ function option(select,value,label){const o=make('option','',label);o.value=valu
 function domainLabel(id){return domains.find(d=>d.id===id)?.name || id;}
 function compareState(){const n=selected.size;$('#compare-count').textContent=n;$('#compare-open').disabled=n!==2;}
 function abbreviation(cert){
- const match=cert.name.match(/\(([^()]*)\)\s*$/); return match?match[1]:cert.name;
+ const match=cert.name.match(/\(([^()]*)\)\s*$/); return cert.abbreviation || (match?match[1]:cert.name);
 }
 function closeDetail(){ $('#cert-detail').hidden=true;$('#cert-backdrop').hidden=true;document.body.style.overflow='';previousFocus?.focus(); }
 function openDetail(cert){
  previousFocus=document.activeElement;
  const root=$('#cert-detail-content');root.replaceChildren();
  const title=make('h2','',cert.name);title.id='cert-detail-title';root.append(title,make('p','',cert.summary));
- root.append(make('h3','','Provider'),make('p','',cert.provider),make('h3','','Level'),make('p','',cert.level||'Not specified'));
+ root.append(make('h3','','Provider'),make('p','',cert.provider),make('h3','','Level'),make('p','',cert.level ? cert.level + (cert.source_level ? ' (source estimate)' : '') : 'Not specified'));
+ if(cert.source==='certmap') root.append(make('h3','','Credential type'),make('p','',cert.credential_type),make('p','', 'Catalog entry from cert/map; availability and details should be confirmed with the provider.'));
  const domainsList=make('div','cert-detail-domains');cert.domains.forEach(id=>{const a=make('a','',domainLabel(id));a.href=`index.html?domain=${encodeURIComponent(id)}`;domainsList.append(a);});root.append(make('h3','','Domains'),domainsList);
- const link=make('a','official-link','Official details');link.href=cert.url;link.target='_blank';link.rel='noopener noreferrer';root.append(link);
+ const link=make('a','official-link',cert.source==='certmap'?'Provider link':'Official details');link.href=cert.url;link.target='_blank';link.rel='noopener noreferrer';root.append(link);
  const label=make('label','detail-compare');const check=make('input');check.type='checkbox';check.checked=selected.has(cert.id);check.disabled=!check.checked&&selected.size>=2;check.addEventListener('change',()=>{check.checked?selected.add(cert.id):selected.delete(cert.id);compareState();});label.append(check,document.createTextNode('Add to comparison'));root.append(label);
  $('#cert-backdrop').hidden=false;$('#cert-detail').hidden=false;document.body.style.overflow='hidden';$('#cert-close').focus();
 }
@@ -40,7 +41,7 @@ function render(){
      if(subcategory.name)sub.classList.add('is-subcategory');results.append(sub);
    });
  });
- const bands=[{level:'Expert',label:'Expert'}, {level:'Intermediate',label:'Intermediate'}, {level:'Beginner',label:'Beginner'}, {level:null,label:'Level not specified'}];
+ const bands=[{level:'Expert',label:'Expert'}, {level:'Advanced',label:'Advanced'}, {level:'Intermediate',label:'Intermediate'}, {level:'Beginner',label:'Beginner'}, {level:null,label:'Level not specified'}];
  let firstRow=3;
  const trackCerts=(track,band)=>certs.filter(c=>c.roadmap_categories.includes(track.category.id)&&(c.level||null)===band.level&&(c.roadmap_subcategories?.[track.category.id]||'general')===track.subcategory.id);
  bands.forEach(band=>{
@@ -68,7 +69,7 @@ function openCompare(){
  const root=$('#compare-content');root.replaceChildren();const grid=make('div','compare-grid');
  picks.forEach(cert=>{const col=make('section','compare-column');col.append(make('h3','',cert.name),make('p','compare-provider',cert.provider),make('p','',cert.summary));
   for(const [label,value] of [['Level',cert.level||'Not specified'],['Domains',cert.domains.map(domainLabel).join(', ')]]){col.append(make('h4','',label),make('p','',value));}
-  const a=make('a','official-link','Official details');a.href=cert.url;a.target='_blank';a.rel='noopener noreferrer';col.append(a);grid.append(col);});
+  const a=make('a','official-link',cert.source==='certmap'?'Provider link':'Official details');a.href=cert.url;a.target='_blank';a.rel='noopener noreferrer';col.append(a);grid.append(col);});
  root.append(grid);$('#compare-backdrop').hidden=false;$('#compare-panel').hidden=false;document.body.style.overflow='hidden';$('#compare-close').focus();
 }
 $('#filter-toggle').addEventListener('click',()=>{const panel=$('#filter-panel');panel.hidden=!panel.hidden;$('#filter-toggle').setAttribute('aria-expanded',String(!panel.hidden));$('#filter-toggle').textContent=panel.hidden?'Show filters':'Hide filters';});
@@ -81,3 +82,4 @@ Promise.all([fetch('certifications.json'),fetch('domains.json')]).then(async res
  certs=catalog.certifications;categories=catalog.roadmap_categories;domains=roadmap.domains;domains.forEach(d=>option(domain,d.id,d.name));[...new Set(certs.map(c=>c.provider))].sort().forEach(v=>option(provider,v,v));[...new Set(certs.map(c=>c.level).filter(Boolean))].sort().forEach(v=>option(level,v,v));
  const requested=new URLSearchParams(location.search).get('domain');if(domains.some(d=>d.id===requested))domain.value=requested;render();
 }).catch(()=>{$('#result-count').textContent='Unable to load certification data. Run the site using the local server and try again.';});
+

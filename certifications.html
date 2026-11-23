@@ -7,10 +7,11 @@
   <div class="roadmap-controls"><label class="roadmap-search"><span class="sr-only">Search certifications</span><input id="search" type="search" placeholder="Search..." autocomplete="off"></label><button type="button" id="filter-toggle" aria-expanded="false" aria-controls="filter-panel">Show filters</button><button type="button" id="compare-open" class="compare-open" disabled>Compare <span id="compare-count">0</span> / 2</button></div>
 </div>
 <form class="roadmap-filters" id="filter-panel" onsubmit="return false" hidden><label>Domain <select id="domain"><option value="">All domains</option></select></label><label>Provider <select id="provider"><option value="">All providers</option></select></label><label>Level <select id="level"><option value="">All levels</option></select></label><button id="reset" type="button">Reset filters</button></form>
-<p class="roadmap-hint">Select a certification for details. Levels are shown only when verified.</p>
+<p class="roadmap-hint">Select a certification for details. Levels include source estimates; confirm current details with the provider.</p>
 <div class="matrix-scroll" tabindex="0" aria-label="Certification roadmap; scroll horizontally to see all categories"><div id="cert-results" class="roadmap-grid"></div></div>
-<p class="roadmap-count" id="result-count" role="status">Loading certifications...</p><p id="cert-empty" class="cert-empty" hidden>No certifications match these filters.</p>
+<p class="roadmap-hint">Catalog data adapted from <a href="https://certmap.dev/" target="_blank" rel="noopener noreferrer">cert/map</a> under <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a>; domains and layout were adapted. Inclusion does not imply endorsement.</p><p class="roadmap-count" id="result-count" role="status">Loading certifications...</p><p id="cert-empty" class="cert-empty" hidden>No certifications match these filters.</p>
 </main>
 <div id="compare-backdrop" class="backdrop" hidden></div><aside id="compare-panel" class="drawer compare-panel" role="dialog" aria-modal="true" aria-labelledby="compare-title" hidden><div class="drawer-top"><h2 id="compare-title">Compare certifications</h2><button type="button" id="compare-close" aria-label="Close comparison">&times;</button></div><div id="compare-content"></div></aside>
 <div id="cert-backdrop" class="backdrop" hidden></div><aside id="cert-detail" class="drawer" role="dialog" aria-modal="true" aria-labelledby="cert-detail-title" hidden><div class="drawer-top"><span>Certification details</span><button type="button" id="cert-close" aria-label="Close details">&times;</button></div><div id="cert-detail-content"></div></aside>
 </body></html>
+
