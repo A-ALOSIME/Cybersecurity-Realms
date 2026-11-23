@@ -248,6 +248,198 @@
       "roadmap_subcategories": {
         "grc": "governance"
       }
+    },
+    {
+      "id": "giac-gcfa",
+      "name": "GIAC Certified Forensic Analyst (GCFA)",
+      "provider": "GIAC",
+      "domains": [
+        "defense"
+      ],
+      "url": "https://www.giac.org/focus-areas/digital-forensics-incident-response",
+      "summary": "See the issuing organization for current certification details.",
+      "level": null,
+      "checked": "2026-11-23",
+      "roadmap_categories": [
+        "defense"
+      ],
+      "roadmap_subcategories": {
+        "defense": "forensics"
+      }
+    },
+    {
+      "id": "giac-gcfe",
+      "name": "GIAC Certified Forensic Examiner (GCFE)",
+      "provider": "GIAC",
+      "domains": [
+        "defense"
+      ],
+      "url": "https://www.giac.org/focus-areas/digital-forensics-incident-response",
+      "summary": "See the issuing organization for current certification details.",
+      "level": null,
+      "checked": "2026-11-23",
+      "roadmap_categories": [
+        "defense"
+      ],
+      "roadmap_subcategories": {
+        "defense": "forensics"
+      }
+    },
+    {
+      "id": "giac-gcih",
+      "name": "GIAC Certified Incident Handler (GCIH)",
+      "provider": "GIAC",
+      "domains": [
+        "defense"
+      ],
+      "url": "https://www.giac.org/focus-areas/digital-forensics-incident-response",
+      "summary": "See the issuing organization for current certification details.",
+      "level": null,
+      "checked": "2026-11-23",
+      "roadmap_categories": [
+        "defense"
+      ],
+      "roadmap_subcategories": {
+        "defense": "incident"
+      }
+    },
+    {
+      "id": "giac-gsec",
+      "name": "GIAC Security Essentials (GSEC)",
+      "provider": "GIAC",
+      "domains": [
+        "defense"
+      ],
+      "url": "https://www.giac.org/pricing",
+      "summary": "See the issuing organization for current certification details.",
+      "level": null,
+      "checked": "2026-11-23",
+      "roadmap_categories": [
+        "defense"
+      ],
+      "roadmap_subcategories": {}
+    },
+    {
+      "id": "offsec-osep",
+      "name": "OffSec Experienced Penetration Tester (OSEP)",
+      "provider": "OffSec",
+      "domains": [
+        "offensive"
+      ],
+      "url": "https://help.offsec.com/hc/en-us/articles/4418343957396-Which-exams-are-proctored",
+      "summary": "See the issuing organization for current certification details.",
+      "level": null,
+      "checked": "2026-11-23",
+      "roadmap_categories": [
+        "offense"
+      ],
+      "roadmap_subcategories": {
+        "offense": "pentesting"
+      }
+    },
+    {
+      "id": "offsec-oswe",
+      "name": "OffSec Web Expert (OSWE)",
+      "provider": "OffSec",
+      "domains": [
+        "offensive"
+      ],
+      "url": "https://help.offsec.com/hc/en-us/articles/4418343957396-Which-exams-are-proctored",
+      "summary": "See the issuing organization for current certification details.",
+      "level": null,
+      "checked": "2026-11-23",
+      "roadmap_categories": [
+        "offense"
+      ],
+      "roadmap_subcategories": {
+        "offense": "pentesting"
+      }
+    },
+    {
+      "id": "offsec-osed",
+      "name": "OffSec Exploit Developer (OSED)",
+      "provider": "OffSec",
+      "domains": [
+        "offensive"
+      ],
+      "url": "https://help.offsec.com/hc/en-us/articles/4418343957396-Which-exams-are-proctored",
+      "summary": "See the issuing organization for current certification details.",
+      "level": null,
+      "checked": "2026-11-23",
+      "roadmap_categories": [
+        "offense"
+      ],
+      "roadmap_subcategories": {
+        "offense": "exploitation"
+      }
+    },
+    {
+      "id": "offsec-oswp",
+      "name": "OffSec Wireless Professional (OSWP)",
+      "provider": "OffSec",
+      "domains": [
+        "offensive"
+      ],
+      "url": "https://help.offsec.com/hc/en-us/articles/4418343957396-Which-exams-are-proctored",
+      "summary": "See the issuing organization for current certification details.",
+      "level": null,
+      "checked": "2026-11-23",
+      "roadmap_categories": [
+        "offense"
+      ],
+      "roadmap_subcategories": {
+        "offense": "pentesting"
+      }
+    },
+    {
+      "id": "offsec-oswa",
+      "name": "OffSec Web Assessor (OSWA)",
+      "provider": "OffSec",
+      "domains": [
+        "offensive"
+      ],
+      "url": "https://help.offsec.com/hc/en-us/articles/11628867342996-Managing-OffSec-Certification-Exams",
+      "summary": "See the issuing organization for current certification details.",
+      "level": null,
+      "checked": "2026-11-23",
+      "roadmap_categories": [
+        "offense"
+      ],
+      "roadmap_subcategories": {
+        "offense": "pentesting"
+      }
+    },
+    {
+      "id": "offsec-osda",
+      "name": "OffSec Defense Analyst (OSDA)",
+      "provider": "OffSec",
+      "domains": [
+        "defense"
+      ],
+      "url": "https://help.offsec.com/hc/en-us/articles/11628867342996-Managing-OffSec-Certification-Exams",
+      "summary": "See the issuing organization for current certification details.",
+      "level": null,
+      "checked": "2026-11-23",
+      "roadmap_categories": [
+        "defense"
+      ],
+      "roadmap_subcategories": {}
+    },
+    {
+      "id": "microsoft-sc100",
+      "name": "Microsoft Certified: Cybersecurity Architect Expert (SC-100)",
+      "provider": "Microsoft",
+      "domains": [
+        "engineering"
+      ],
+      "url": "https://learn.microsoft.com/credentials/certifications/cybersecurity-architect-expert/",
+      "summary": "See the issuing organization for current certification details.",
+      "level": "Expert",
+      "checked": "2026-11-23",
+      "roadmap_categories": [
+        "architecture"
+      ],
+      "roadmap_subcategories": {}
     }
   ],
   "roadmap_categories": [
@@ -393,3 +585,4 @@
     }
   ]
 }
+

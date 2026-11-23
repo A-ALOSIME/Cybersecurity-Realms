@@ -8,7 +8,12 @@
       "description": "Identifying and validating security weaknesses through authorized testing and adversary simulation.",
       "related_certs": [
         "htb-cpts",
-        "oscp"
+        "oscp",
+        "offsec-osep",
+        "offsec-oswe",
+        "offsec-osed",
+        "offsec-oswp",
+        "offsec-oswa"
       ],
       "specialties": [
         {
@@ -66,7 +71,12 @@
         "isc2-cc",
         "sscp",
         "sc200",
-        "htb-cdsa"
+        "htb-cdsa",
+        "giac-gcfa",
+        "giac-gcfe",
+        "giac-gcih",
+        "giac-gsec",
+        "offsec-osda"
       ],
       "specialties": [
         {
@@ -130,7 +140,8 @@
         "ccsp",
         "sscp",
         "csslp",
-        "sc900"
+        "sc900",
+        "microsoft-sc100"
       ],
       "specialties": [
         {
@@ -374,3 +385,4 @@
     }
   ]
 }
+
