@@ -1,0 +1,678 @@
+{
+  "resources": [
+    {
+      "id": "resource-1",
+      "name": "Getting Into Information Security",
+      "url": "https://shellsharks.com/getting-into-information-security",
+      "description": "A guide to information security roles and learning paths.",
+      "type": "Guide",
+      "group": "Foundations",
+      "domains": [],
+      "access": "Not verified"
+    },
+    {
+      "id": "resource-2",
+      "name": "PCEF Courses",
+      "url": "https://perkinsfund.org/courses",
+      "description": "Cybersecurity courses and cheat sheets.",
+      "type": "Courses",
+      "group": "Foundations",
+      "domains": [],
+      "access": "Free"
+    },
+    {
+      "id": "resource-3",
+      "name": "MICS",
+      "url": "https://www.mosse-institute.com/certifications/mics-introduction-to-cyber-security.html",
+      "description": "Introductory cybersecurity training.",
+      "type": "Course",
+      "group": "Foundations",
+      "domains": [
+        "defense",
+        "grc"
+      ],
+      "access": "Not verified"
+    },
+    {
+      "id": "resource-4",
+      "name": "Teach Yourself Computer Science",
+      "url": "https://teachyourselfcs.com/",
+      "description": "A self-directed computer science curriculum.",
+      "type": "Learning path",
+      "group": "Foundations",
+      "domains": [],
+      "access": "Not verified"
+    },
+    {
+      "id": "resource-5",
+      "name": "OSSU Computer Science",
+      "url": "https://github.com/ossu/computer-science",
+      "description": "An open computer science curriculum.",
+      "type": "Learning path",
+      "group": "Foundations",
+      "domains": [],
+      "access": "Not verified"
+    },
+    {
+      "id": "resource-6",
+      "name": "How Computers Use Numbers",
+      "url": "https://mabi.land/numbers/",
+      "description": "A visual guide to how computers represent numbers.",
+      "type": "Guide",
+      "group": "Foundations",
+      "domains": [],
+      "access": "Not verified"
+    },
+    {
+      "id": "resource-7",
+      "name": "Beej?s Guide to Network Concepts",
+      "url": "https://beej.us/guide/bgnet0/html/split/index.html",
+      "description": "A guide to networking fundamentals and protocols.",
+      "type": "Guide",
+      "group": "Foundations",
+      "domains": [
+        "systems"
+      ],
+      "access": "Not verified"
+    },
+    {
+      "id": "resource-8",
+      "name": "Computer Networks Tutorial",
+      "url": "https://www.geeksforgeeks.org/computer-networks/computer-network-tutorials/",
+      "description": "A collection of networking lessons.",
+      "type": "Guide",
+      "group": "Foundations",
+      "domains": [
+        "systems"
+      ],
+      "access": "Not verified"
+    },
+    {
+      "id": "resource-9",
+      "name": "Networking Lecture 01",
+      "url": "https://www.youtube.com/watch?v=EN0efud3M5U&list=PLWl7jvxH18r3nnotitKkyAjq268PQGc0-",
+      "description": "A networking lecture and playlist.",
+      "type": "Video",
+      "group": "Foundations",
+      "domains": [
+        "systems"
+      ],
+      "access": "Not verified",
+      "note": "Video availability could not be checked during the review."
+    },
+    {
+      "id": "resource-10",
+      "name": "Python Programming MOOC 2026",
+      "url": "https://programming-26.mooc.fi/",
+      "description": "University of Helsinki?s Python programming course.",
+      "type": "Course",
+      "group": "Foundations",
+      "domains": [],
+      "access": "Not verified"
+    },
+    {
+      "id": "resource-11",
+      "name": "Bash Scripting Tutorial",
+      "url": "https://bash.cyberciti.biz/guide/Main_Page",
+      "description": "A guide to shell scripting and Bash.",
+      "type": "Guide",
+      "group": "Foundations",
+      "domains": [
+        "systems"
+      ],
+      "access": "Not verified",
+      "note": "This page could not be fully checked during the review."
+    },
+    {
+      "id": "resource-12",
+      "name": "Linux Commands Cheat Sheet",
+      "url": "https://highon.coffee/blog/linux-commands-cheat-sheet/",
+      "description": "A quick reference for Linux commands.",
+      "type": "Reference",
+      "group": "Foundations",
+      "domains": [
+        "systems"
+      ],
+      "access": "Not verified"
+    },
+    {
+      "id": "resource-13",
+      "name": "explainshell",
+      "url": "https://explainshell.com/",
+      "description": "Explains shell commands and their arguments.",
+      "type": "Tool",
+      "group": "Foundations",
+      "domains": [
+        "systems"
+      ],
+      "access": "Not verified"
+    },
+    {
+      "id": "resource-14",
+      "name": "Learn To HomeLab",
+      "url": "https://learntohomelab.com/docs/intro",
+      "description": "A guide to building a home lab.",
+      "type": "Guide",
+      "group": "Foundations",
+      "domains": [
+        "systems"
+      ],
+      "access": "Not verified"
+    },
+    {
+      "id": "resource-15",
+      "name": "ARTToolkit",
+      "url": "https://arttoolkit.github.io/",
+      "description": "An interactive reference for red-team tools and commands.",
+      "type": "Reference",
+      "group": "Offensive Security",
+      "domains": [
+        "offensive",
+        "defense"
+      ],
+      "access": "Not verified"
+    },
+    {
+      "id": "resource-16",
+      "name": "OWASP Attacks",
+      "url": "https://community.owasp.org/attacks/",
+      "description": "An OWASP catalog of attack techniques.",
+      "type": "Reference",
+      "group": "Offensive Security",
+      "domains": [
+        "offensive",
+        "engineering"
+      ],
+      "access": "Not verified"
+    },
+    {
+      "id": "resource-17",
+      "name": "HackTricks",
+      "url": "https://hacktricks.wiki/",
+      "description": "Community-maintained security testing techniques and notes.",
+      "type": "Reference",
+      "group": "Offensive Security",
+      "domains": [
+        "offensive"
+      ],
+      "access": "Not verified",
+      "note": "This page could not be fully checked during the review."
+    },
+    {
+      "id": "resource-18",
+      "name": "PentestingEverything",
+      "url": "https://github.com/m14r41/PentestingEverything",
+      "description": "Penetration testing and application security resources.",
+      "type": "Reference",
+      "group": "Offensive Security",
+      "domains": [
+        "offensive"
+      ],
+      "access": "Not verified"
+    },
+    {
+      "id": "resource-19",
+      "name": "The Hacker Recipes",
+      "url": "https://www.thehacker.recipes/",
+      "description": "Security testing techniques for networks and Active Directory.",
+      "type": "Reference",
+      "group": "Offensive Security",
+      "domains": [
+        "offensive"
+      ],
+      "access": "Not verified"
+    },
+    {
+      "id": "resource-20",
+      "name": "LOLBAS",
+      "url": "https://lolbas-project.github.io/",
+      "description": "Documents attacker use of Windows binaries and scripts.",
+      "type": "Reference",
+      "group": "Offensive Security",
+      "domains": [
+        "offensive",
+        "defense"
+      ],
+      "access": "Not verified"
+    },
+    {
+      "id": "resource-21",
+      "name": "NTHW Bug Bounty",
+      "url": "https://github.com/notthehiddenwiki/NTHW/tree/nthw/Bug%20Bounty",
+      "description": "A collection of bug bounty resources.",
+      "type": "Directory",
+      "group": "Offensive Security",
+      "domains": [
+        "offensive"
+      ],
+      "access": "Not verified",
+      "note": "This page could not be fully checked during the review."
+    },
+    {
+      "id": "resource-22",
+      "name": "Awesome Hacking Resources",
+      "url": "https://github.com/vitalysim/Awesome-Hacking-Resources",
+      "description": "A community collection of penetration testing resources.",
+      "type": "Directory",
+      "group": "Offensive Security",
+      "domains": [
+        "offensive"
+      ],
+      "access": "Not verified"
+    },
+    {
+      "id": "resource-23",
+      "name": "PentesterLab",
+      "url": "https://pentesterlab.com/",
+      "description": "Hands-on web security and code review exercises.",
+      "type": "Lab",
+      "group": "Offensive Security",
+      "domains": [
+        "offensive",
+        "engineering"
+      ],
+      "access": "Free & paid"
+    },
+    {
+      "id": "resource-24",
+      "name": "PortSwigger Web Security Academy",
+      "url": "https://portswigger.net/web-security",
+      "description": "Web security lessons and hands-on labs.",
+      "type": "Lab",
+      "group": "Offensive Security",
+      "domains": [
+        "offensive",
+        "engineering"
+      ],
+      "access": "Free"
+    },
+    {
+      "id": "resource-25",
+      "name": "Five Pillars of DFIR",
+      "url": "https://github.com/DFIRmadness/5pillars/blob/master/5-Pillars.md",
+      "description": "A framework for digital forensics investigations.",
+      "type": "Guide",
+      "group": "Blue Team & DFIR",
+      "domains": [
+        "defense"
+      ],
+      "access": "Not verified"
+    },
+    {
+      "id": "resource-26",
+      "name": "MITRE D3FEND",
+      "url": "https://d3fend.mitre.org/",
+      "description": "A knowledge base of defensive security techniques.",
+      "type": "Reference",
+      "group": "Blue Team & DFIR",
+      "domains": [
+        "defense",
+        "engineering"
+      ],
+      "access": "Not verified"
+    },
+    {
+      "id": "resource-27",
+      "name": "SOC Interview Questions",
+      "url": "https://github.com/LetsDefend/SOC-Interview-Questions",
+      "description": "Security operations interview questions.",
+      "type": "Reference",
+      "group": "Blue Team & DFIR",
+      "domains": [
+        "defense"
+      ],
+      "access": "Not verified"
+    },
+    {
+      "id": "resource-28",
+      "name": "Microsoft Student SOC",
+      "url": "https://microsoft.github.io/SOC/source/content/#/",
+      "description": "Resources for a student security operations center.",
+      "type": "Course",
+      "group": "Blue Team & DFIR",
+      "domains": [
+        "defense"
+      ],
+      "access": "Not verified",
+      "note": "The JavaScript page was corroborated with Microsoft's public repository."
+    },
+    {
+      "id": "resource-29",
+      "name": "Malware Traffic Analysis",
+      "url": "https://www.malware-traffic-analysis.net/",
+      "description": "Network traffic exercises and malware-related captures.",
+      "type": "Lab",
+      "group": "Blue Team & DFIR",
+      "domains": [
+        "defense"
+      ],
+      "access": "Not verified",
+      "note": " May contain malware samples or traffic for controlled analysis."
+    },
+    {
+      "id": "resource-30",
+      "name": "Ike",
+      "url": "https://ike.mahaloz.re/1_introduction/background.html",
+      "description": "A guide to reverse engineering and program analysis.",
+      "type": "Guide",
+      "group": "Reverse Engineering & Malware",
+      "domains": [
+        "offensive",
+        "defense"
+      ],
+      "access": "Not verified"
+    },
+    {
+      "id": "resource-31",
+      "name": "Maldev Academy",
+      "url": "https://maldevacademy.com/",
+      "description": "Training on malware development and related techniques.",
+      "type": "Course",
+      "group": "Reverse Engineering & Malware",
+      "domains": [
+        "offensive",
+        "defense"
+      ],
+      "access": "Not verified",
+      "note": "This page could not be fully checked during the review."
+    },
+    {
+      "id": "resource-32",
+      "name": "VX Underground",
+      "url": "https://vx-underground.org/",
+      "description": "A malware research archive with technical material and samples.",
+      "type": "Archive",
+      "group": "Reverse Engineering & Malware",
+      "domains": [
+        "offensive",
+        "defense"
+      ],
+      "access": "Not verified",
+      "note": "This page could not be fully checked during the review. May contain malware samples or traffic for controlled analysis."
+    },
+    {
+      "id": "resource-33",
+      "name": "Anti-Debug Tricks",
+      "url": "https://anti-debug.checkpoint.com/",
+      "description": "A reference on anti-debugging techniques.",
+      "type": "Reference",
+      "group": "Reverse Engineering & Malware",
+      "domains": [
+        "offensive",
+        "defense"
+      ],
+      "access": "Not verified"
+    },
+    {
+      "id": "resource-34",
+      "name": "Malware Analysis Tutorials",
+      "url": "https://fumalwareanalysis.blogspot.com/p/malware-analysis-tutorials-reverse.html",
+      "description": "Reverse engineering and malware analysis tutorials.",
+      "type": "Guide",
+      "group": "Reverse Engineering & Malware",
+      "domains": [
+        "offensive",
+        "defense"
+      ],
+      "access": "Not verified",
+      "note": "This page could not be fully checked during the review."
+    },
+    {
+      "id": "resource-35",
+      "name": "OpenSecurityTraining2",
+      "url": "https://p.ost2.fyi/",
+      "description": "Training in architecture, reverse engineering and security.",
+      "type": "Course",
+      "group": "Reverse Engineering & Malware",
+      "domains": [
+        "offensive",
+        "defense",
+        "systems"
+      ],
+      "access": "Not verified"
+    },
+    {
+      "id": "resource-36",
+      "name": "Wargame Nexus",
+      "url": "https://github.com/zardus/wargame-nexus",
+      "description": "A directory of security wargame sites.",
+      "type": "Directory",
+      "group": "Labs & CTFs",
+      "domains": [
+        "offensive",
+        "defense"
+      ],
+      "access": "Not verified"
+    },
+    {
+      "id": "resource-37",
+      "name": "CTF Sites",
+      "url": "https://ctfsites.github.io/",
+      "description": "A directory of capture-the-flag practice platforms.",
+      "type": "Directory",
+      "group": "Labs & CTFs",
+      "domains": [
+        "offensive",
+        "defense"
+      ],
+      "access": "Not verified"
+    },
+    {
+      "id": "resource-38",
+      "name": "Hack This Site",
+      "url": "https://www.hackthissite.org/",
+      "description": "A hacking challenges and practice community.",
+      "type": "Lab",
+      "group": "Labs & CTFs",
+      "domains": [
+        "offensive",
+        "defense"
+      ],
+      "access": "Not verified"
+    },
+    {
+      "id": "resource-39",
+      "name": "OverTheWire: Bandit",
+      "url": "https://overthewire.org/wargames/bandit/",
+      "description": "A beginner-friendly Linux command-line wargame.",
+      "type": "Lab",
+      "group": "Labs & CTFs",
+      "domains": [
+        "offensive",
+        "defense"
+      ],
+      "access": "Not verified"
+    },
+    {
+      "id": "resource-40",
+      "name": "TryHackMe",
+      "url": "https://tryhackme.com/welcome",
+      "description": "Guided cybersecurity training paths and labs.",
+      "type": "Lab",
+      "group": "Labs & CTFs",
+      "domains": [
+        "offensive",
+        "defense",
+        "engineering"
+      ],
+      "access": "Not verified"
+    },
+    {
+      "id": "resource-41",
+      "name": "pwn.college",
+      "url": "https://pwn.college/",
+      "description": "Hands-on cybersecurity and software security challenges.",
+      "type": "Lab",
+      "group": "Labs & CTFs",
+      "domains": [
+        "offensive",
+        "defense"
+      ],
+      "access": "Not verified",
+      "note": "The homepage timed out during the check; individual training pages were found."
+    },
+    {
+      "id": "resource-42",
+      "name": "Legal Hacking Websites",
+      "url": "https://github.com/bitofsecurity/legal-hacking-websites",
+      "description": "Websites for authorized security practice.",
+      "type": "Directory",
+      "group": "Labs & CTFs",
+      "domains": [
+        "offensive",
+        "defense"
+      ],
+      "access": "Not verified"
+    },
+    {
+      "id": "resource-43",
+      "name": "OSINT Dojo",
+      "url": "https://www.osintdojo.com/resources/",
+      "description": "A directory of open-source intelligence resources.",
+      "type": "Directory",
+      "group": "OSINT & Threat Intelligence",
+      "domains": [
+        "defense"
+      ],
+      "access": "Not verified"
+    },
+    {
+      "id": "resource-44",
+      "name": "RansomLook",
+      "url": "https://www.ransomlook.io/",
+      "description": "Open-source ransomware intelligence and activity tracking.",
+      "type": "Tool",
+      "group": "OSINT & Threat Intelligence",
+      "domains": [
+        "defense"
+      ],
+      "access": "Not verified"
+    },
+    {
+      "id": "resource-45",
+      "name": "CyberChef",
+      "url": "https://gchq.github.io/CyberChef/",
+      "description": "A browser-based toolkit for data analysis and encoding.",
+      "type": "Tool",
+      "group": "Tools",
+      "domains": [
+        "defense",
+        "offensive"
+      ],
+      "access": "Not verified"
+    },
+    {
+      "id": "resource-46",
+      "name": "IT Tools",
+      "url": "https://it-tools.tech/",
+      "description": "A collection of utilities for developers.",
+      "type": "Tool",
+      "group": "Tools",
+      "domains": [],
+      "access": "Not verified",
+      "note": "This page could not be fully checked during the review."
+    },
+    {
+      "id": "resource-47",
+      "name": "roadmap.sh",
+      "url": "https://roadmap.sh/",
+      "description": "Technology role and skill roadmaps.",
+      "type": "Learning path",
+      "group": "General Resources",
+      "domains": [],
+      "access": "Not verified"
+    },
+    {
+      "id": "resource-48",
+      "name": "InfoCon",
+      "url": "https://infocon.org/",
+      "description": "Security conference recordings and materials.",
+      "type": "Archive",
+      "group": "General Resources",
+      "domains": [],
+      "access": "Not verified",
+      "note": "This page could not be fully checked during the review."
+    },
+    {
+      "id": "resource-49",
+      "name": "Kindling Projects",
+      "url": "https://nedbatchelder.com/text/kindling",
+      "description": "Advice and ideas for starting programming projects.",
+      "type": "Guide",
+      "group": "General Resources",
+      "domains": [],
+      "access": "Not verified"
+    },
+    {
+      "id": "resource-50",
+      "name": "Deep Learning Course",
+      "url": "https://www.youtube.com/watch?v=HJd1I3FdSnY&t=46717s",
+      "description": "A long-form introduction to deep learning.",
+      "type": "Video",
+      "group": "General Resources",
+      "domains": [],
+      "access": "Not verified",
+      "note": "Video availability could not be checked during the review."
+    },
+    {
+      "id": "resource-51",
+      "name": "Threat Models",
+      "url": "https://www.youtube.com/watch?v=GqmQg-cszw4&list=PLUl4u3cNGP62K2DjQLRxDNRi0z2IRWnNh",
+      "description": "A lecture and playlist on threat modeling.",
+      "type": "Video",
+      "group": "General Resources",
+      "domains": [
+        "engineering",
+        "grc"
+      ],
+      "access": "Not verified",
+      "note": "Video availability could not be checked during the review."
+    },
+    {
+      "id": "resource-52",
+      "name": "theshyhat",
+      "url": "https://www.youtube.com/@theshyhat/videos",
+      "description": "A YouTube channel with technical videos.",
+      "type": "Video",
+      "group": "General Resources",
+      "domains": [],
+      "access": "Not verified",
+      "note": "Video availability could not be checked during the review."
+    },
+    {
+      "id": "resource-53",
+      "name": "elhacker.INFO",
+      "url": "https://elhacker.info/",
+      "description": "A third-party archive of courses, manuals and books.",
+      "type": "Archive",
+      "group": "General Resources",
+      "domains": [],
+      "access": "Not verified",
+      "note": "Third-party downloads; file safety and distribution rights were not verified."
+    },
+    {
+      "id": "resource-54",
+      "name": "Project-Based Learning",
+      "url": "https://github.com/practical-tutorials/project-based-learning?tab=readme-ov-file",
+      "description": "Programming tutorials organized around building projects.",
+      "type": "Directory",
+      "group": "General Resources",
+      "domains": [],
+      "access": "Not verified",
+      "note": "This page could not be fully checked during the review."
+    },
+    {
+      "id": "resource-55",
+      "name": "OWASP Cheat Sheet Series",
+      "url": "https://cheatsheetseries.owasp.org/index.html",
+      "description": "Practical guidance on application security.",
+      "type": "Reference",
+      "group": "General Resources",
+      "domains": [
+        "engineering"
+      ],
+      "access": "Not verified"
+    }
+  ]
+}
+

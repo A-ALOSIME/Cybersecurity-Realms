@@ -21,6 +21,7 @@ function openDetails(item, color) {
  if(item.description) content.append(el('p','',item.description));
  else content.append(el('p','',`A specialty within ${item.parentName || 'cybersecurity'}. Explore how it connects to the broader domain.`));
  if(item.specialties && item.related_certs?.length){ const related=el('p','drawer-cert-link'); const link=el('a','','Explore related certifications'); link.href='certifications.html?domain='+encodeURIComponent(item.id); related.append(link); content.append(related); }
+ if(item.specialties){const related=el('p','drawer-cert-link');const link=el('a','','Explore related resources');link.href='resources.html?domain='+encodeURIComponent(item.id);related.append(link);content.append(related);}
  const children=item.specialties || item.children || [];
  if(children.length){content.append(el('h3','','SPECIALTIES')); content.append(tree(children,color));}
  if(item.id==='offensive'||item.id==='defense'){ const note=el('p','drawer-bridge'); note.append('Connected through '); const b=el('button','','Purple Teaming'); b.type='button'; b.addEventListener('click',()=>openDetails(data.bridges[0], '#B7A2E8')); note.append(b); content.append(note); }
@@ -29,7 +30,7 @@ function openDetails(item, color) {
 }
 function closeDetails(){drawer.hidden=true;backdrop.hidden=true;document.body.style.overflow='';if(previousFocus)previousFocus.focus();}
 $('#close-details').addEventListener('click',closeDetails);backdrop.addEventListener('click',closeDetails);
-document.addEventListener('keydown',event=>{if(drawer.hidden)return;if(event.key==='Escape')closeDetails(); if(event.key==='Tab'){const controls=[...drawer.querySelectorAll('button:not([disabled])')];if(!controls.length)return;const first=controls[0],last=controls[controls.length-1];if(event.shiftKey&&document.activeElement===first){event.preventDefault();last.focus();}else if(!event.shiftKey&&document.activeElement===last){event.preventDefault();first.focus();}}});
+document.addEventListener('keydown',event=>{if(drawer.hidden)return;if(event.key==='Escape')closeDetails(); if(event.key==='Tab'){const controls=[...drawer.querySelectorAll('button:not([disabled]),a[href]')];if(!controls.length)return;const first=controls[0],last=controls[controls.length-1];if(event.shiftKey&&document.activeElement===first){event.preventDefault();last.focus();}else if(!event.shiftKey&&document.activeElement===last){event.preventDefault();first.focus();}}});
 function renderList(){
  list.replaceChildren();
  const pair=el('div','domain-pair');
@@ -111,3 +112,4 @@ function renderGraph(){
 function setActive(view){document.querySelectorAll('[data-view]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.view===view)));}
 document.querySelectorAll('[data-view]').forEach(button=>button.addEventListener('click',()=>{const view=button.dataset.view;setActive(view);map.hidden=view!=='map';list.hidden=view!=='list';status.textContent='';if(view==='map'&&!window.d3){map.hidden=true;list.hidden=false;setActive('list');status.textContent='The map requires an internet connection for D3.js. List view is available.';}}));
 fetch('domains.json').then(response=>{if(!response.ok)throw Error('Unable to load domains.json');return response.json();}).then(json=>{data=json;data.domains.forEach(d=>{function mark(items){items.forEach(i=>{i.parentName=d.name;mark(i.children||[]);});}mark(d.specialties);});status.textContent='';renderList();list.hidden=false;renderGraph();const wanted=new URLSearchParams(location.search).get('domain');const target=data.domains.find(d=>d.id===wanted);if(target)openDetails(target,target.color);}).catch(()=>{status.textContent='Unable to load domains.json. Start a local web server in this folder, then open its address in your browser.';});
+
