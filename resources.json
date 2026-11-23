@@ -65,7 +65,7 @@
     },
     {
       "id": "resource-7",
-      "name": "Beej?s Guide to Network Concepts",
+      "name": "Beej\u2019s Guide to Network Concepts",
       "url": "https://beej.us/guide/bgnet0/html/split/index.html",
       "description": "A guide to networking fundamentals and protocols.",
       "type": "Guide",
@@ -104,7 +104,7 @@
       "id": "resource-10",
       "name": "Python Programming MOOC 2026",
       "url": "https://programming-26.mooc.fi/",
-      "description": "University of Helsinki?s Python programming course.",
+      "description": "University of Helsinki\u2019s Python programming course.",
       "type": "Course",
       "group": "Foundations",
       "domains": [],
@@ -675,4 +675,3 @@
     }
   ]
 }
-

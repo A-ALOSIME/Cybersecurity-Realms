@@ -1,10 +1,39 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Explore cybersecurity learning resources and tools."><title>Resources - Cybersecurity Realms</title><link rel="stylesheet" href="style.css"><script defer src="resources.js"></script></head>
-<body><main class="page resources-page">
-<nav class="site-nav" aria-label="Main navigation"><a href="index.html">Domains</a><a href="certifications.html">Certifications</a><a href="resources.html" aria-current="page">Resources</a></nav>
-<header class="resources-header"><div><h1>Resources</h1><p>Find a place to learn, practice, or explore.</p></div><span class="resources-index">CYBERSECURITY REALMS / LIBRARY</span></header>
-<div class="resource-controls"><label class="resource-search"><span>Search</span><input id="resource-search" type="search" placeholder="Search resources..." autocomplete="off"></label><label><span>Domain</span><select id="resource-domain"><option value="">All domains</option></select></label><label><span>Type</span><select id="resource-type"><option value="">All types</option></select></label><button type="button" id="resource-reset">Clear</button></div>
-<div class="resource-overview"><p id="resource-count" role="status">Loading resources...</p><p>External resources � Access and availability may change</p></div>
-<div id="resource-list"></div><p id="resource-empty" class="resource-empty" hidden>No resources match your search. Try clearing the filters.</p>
-</main></body></html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explore cybersecurity learning resources and tools.">
+  <title>Resources - Cybersecurity Realms</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="resources.css">
+  <script defer src="resources.js"></script>
+</head>
+<body>
+<main class="page library-page">
+  <nav class="site-nav" aria-label="Main navigation"><a href="index.html">Domains</a><a href="certifications.html">Certifications</a><a href="resources.html" aria-current="page">Resources</a></nav>
+  <header class="library-header">
+    <h1>Resources</h1>
+    <p>A collection of places to learn and practice cybersecurity.</p>
+  </header>
+  <div class="library-layout">
+    <aside class="library-sidebar" aria-label="Resource categories">
+      <h2>Browse by topic</h2>
+      <div id="category-list" class="category-list"></div>
+    </aside>
+    <section class="library-content" aria-label="Resource directory">
+      <div class="library-controls">
+        <label class="library-search"><span class="sr-only">Search resources</span><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"></circle><path d="m15.5 15.5 4 4"></path></svg><input id="resource-search" type="search" placeholder="Search resources" autocomplete="off"></label>
+        <label><span class="sr-only">Filter by domain</span><select id="resource-domain"><option value="">All domains</option></select></label>
+        <label><span class="sr-only">Filter by type</span><select id="resource-type"><option value="">All types</option></select></label>
+        <button type="button" id="resource-reset">Clear</button>
+      </div>
+      <div class="library-results"><p id="resource-count" role="status">Loading resources...</p><p>External links open in a new tab</p></div>
+      <div id="resource-list"></div>
+      <p id="resource-empty" class="library-empty" hidden>No resources found. Try another search or clear the filters.</p>
+    </section>
+  </div>
+</main>
+</body>
+</html>
 
