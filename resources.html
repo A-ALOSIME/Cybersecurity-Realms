@@ -18,17 +18,17 @@
   </header>
   <div class="library-layout">
     <aside class="library-sidebar" aria-label="Resource categories">
-      <h2>Browse by topic</h2>
+      <h2>Collections</h2>
       <div id="category-list" class="category-list"></div>
     </aside>
     <section class="library-content" aria-label="Resource directory">
       <div class="library-controls">
         <label class="library-search"><span class="sr-only">Search resources</span><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"></circle><path d="m15.5 15.5 4 4"></path></svg><input id="resource-search" type="search" placeholder="Search resources" autocomplete="off"></label>
-        <label><span class="sr-only">Filter by domain</span><select id="resource-domain"><option value="">All domains</option></select></label>
-        <label><span class="sr-only">Filter by type</span><select id="resource-type"><option value="">All types</option></select></label>
-        <button type="button" id="resource-reset">Clear</button>
+        <label><span class="control-label">Related domain</span><select id="resource-domain"><option value="">All domains</option></select></label>
+        <label><span class="control-label">Resource type</span><select id="resource-type"><option value="">All types</option></select></label>
+        <button type="button" id="resource-reset" hidden>Clear filters</button>
       </div>
-      <div class="library-results"><p id="resource-count" role="status">Loading resources...</p><p>External links open in a new tab</p></div>
+      <div class="library-results"><p id="resource-count" role="status">Loading resources...</p></div>
       <div id="resource-list"></div>
       <p id="resource-empty" class="library-empty" hidden>No resources found. Try another search or clear the filters.</p>
     </section>
